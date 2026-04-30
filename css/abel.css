@@ -3,16 +3,24 @@
   text-decoration: none;
 }
 
+.container{
+margin: 2rem 0;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   position: sticky;
+  background-color: #8888fa;
+  padding: 0.5rem;
+border-radius: 10px;
 }
 
 header a p {
   color: rgb(33, 33, 33);
   font-family: Helvetica;
+  font-weight: bolder;
 }
 
 .navlist {
@@ -37,9 +45,6 @@ header a p {
   transition: ease-in-out 0.3s;
 }
 
-.navlist p a {
-  font-weight: bolder;
-}
 
 main {
   width: 100%;

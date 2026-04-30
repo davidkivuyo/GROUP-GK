@@ -1,22 +1,37 @@
+/*
+
+copyright &copy; 2026 GROUP GK
+
+*/
+
 body{
-    padding: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
-.form label{
-    display: block;
-    font-weight: 500;
-    margin: 1rem 0;
+section{
+    padding-bottom:2rem;
+    margin-bottom: 2rem;
 }
 
-.form{
+/* form styles */
+.form label{
+    display: block;
+    margin: 1rem 0;
+}
+.form-div{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.25px solid #b0b0ff;
-    padding: 2rem;
-    border-radius: 10px;
+    flex-direction: column;
 }
 
+.form{
+    border: 2px solid #b3b3bf;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #dfdfe6;
+}
+/* form input styles*/
 .form input[type="text"],.form input[type="email"],.form textarea{
     width: 400px;
     padding: 0.5rem;
@@ -25,4 +40,35 @@ body{
     background-color: white;
     color: black;
     transition: border-color 0.3s, box-shadow 0.3s;
+}
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* form buttons*/
+
+.button{
+    border:none;
+    padding:15px;
+    background-color: #6b6bef;
+    border-radius: 5rem;
+    color: white;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+/* contact cards */
+
+.card-parent{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+background-color: #f1efef;
+    border-radius: 10px;
 }

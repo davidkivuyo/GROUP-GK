@@ -1,8 +1,20 @@
+/*
+
+copyright &copy; 2026 GROUP GK
+
+*/
+
 body{
     padding: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+section{
+    border-bottom: 2px solid #b3b3bf;
+    margin-bottom: 2rem;
+}
+
+/* form styles */
 .form label{
     display: block;
     margin: 1rem 0;
@@ -20,7 +32,7 @@ body{
     border-radius: 10px;
     background-color: #dfdfe6;
 }
-
+/* form input styles*/
 .form input[type="text"],.form input[type="email"],.form textarea{
     width: 400px;
     padding: 0.5rem;
@@ -35,6 +47,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* form buttons*/
 
 .button{
     border:none;
@@ -48,4 +61,15 @@ body{
     background-color: blueviolet;
     cursor: pointer;
     transform: translateY(-2px);
+}
+/* contact cards */
+
+.card-parent{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+background-color: #cacaca;
+    border-radius: 10px;
 }

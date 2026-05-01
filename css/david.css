@@ -1,26 +1,112 @@
 /*
 copyright &copy; GROUP GK 2026
 */
-*{
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
   list-style-type: none;
 }
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-.hero{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: darkslateblue;
-  padding: 10rem;
-border-radius:  0 0 10px 10px;
+.container{
+  margin: 2rem 0;
 }
 
-.hero .intoduction{
+main {
+  align-items: center;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8888fa;
+  padding: 0.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.navbar{
+  position: sticky;
+}
+header a p {
+  color: rgb(33, 33, 33);
+  font-family: Helvetica;
+  font-weight: bolder;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist li a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+  color: #001035;
+}
+
+.navlist li a:hover {
+  color: #86b4ff;
+  font-size: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.hero img {
+  width: 300px;
+  border-radius: 8px;
+}
+.introtext p {
+  line-height: 1.5;
+}
+
+.hero-container{
+  background-color: #6a84ae;
+  padding: 50px;
+  border-radius:  0 0 10px 10px;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.hero .hero-text{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 8px rgb(0, 0, 0, 1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #1f73f9;
+}
+
+td {
+  color: #333;
 }

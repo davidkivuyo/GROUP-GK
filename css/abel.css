@@ -17,6 +17,10 @@
   --heading-font: "DM Serif Text", serif;
   --body-font: "DM Sans", sans-serif;
   --logo-font: "Montserrat", sans-serif;
+  --logo-color: #333;
+  --main-color: #fff;
+  --links-color:  
+;
 }
 
 body {
@@ -26,7 +30,7 @@ body {
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: var(--logo-color);
   font-family: var(--logo-font);
 }
 
@@ -34,7 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--main-color);
   padding: 0.5rem;
   border-radius: 10px 10px 0 0;
   border-bottom: 2px solid #1f1f1f;
@@ -96,7 +100,7 @@ main {
   line-height: 1.5;
 }
 
-table {
+.academic-table {
   border-collapse: collapse;
   box-shadow: 0 0 8px rgb(0, 0, 0, 1);
   border-radius: 5px;

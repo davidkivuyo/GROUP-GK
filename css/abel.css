@@ -11,6 +11,7 @@
 
 * {
   scroll-behavior: smooth;
+   text-decoration: none;
 }
 
 :root {
@@ -48,7 +49,7 @@ header {
   list-style: none;
 }
 
-.navlist li a,.navlist a {
+.navlist li a {
   font-size: 18px;
   text-decoration: none;
   padding: 10px;

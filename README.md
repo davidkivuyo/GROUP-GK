@@ -1,1 +1,2 @@
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/davidkivuyo/GROUP-GK?utm_source=oss&utm_medium=github&utm_campaign=davidkivuyo%2FGROUP-GK&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+# IS 181 GROUP GK WORK
+&copy; 2026

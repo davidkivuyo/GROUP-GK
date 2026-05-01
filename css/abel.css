@@ -21,19 +21,18 @@ header a p {
 
 .navlist li {
   list-style: none;
-  font-weight: bold;
 }
 
 .navlist li a {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   padding: 10px;
-  color: #151515;
+  color: #1f73f9;
 }
 
 .navlist li a:hover {
   color: #86b4ff;
-  font-size: 22px;
+  font-size: 20px;
   transition: ease-in-out 0.3s;
 }
 
@@ -42,9 +41,48 @@ header a p {
 }
 
 main {
-  width: 100%;
+  align-items: center;
 }
 
 .introduction h1 {
   text-align: center;
+}
+
+.introbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.introbox img {
+  width: 300px;
+  border-radius: 8px;
+}
+.introtext p {
+  line-height: 1.5;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 8px rgb(0, 0, 0, 1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #1f73f9;
+}
+
+td {
+  color: #333;
 }

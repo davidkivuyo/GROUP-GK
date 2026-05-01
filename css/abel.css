@@ -41,7 +41,7 @@ header {
   list-style: none;
 }
 
-.navlist li a {
+.navlist li a,.navlist a {
   font-size: 18px;
   text-decoration: none;
   padding: 10px;

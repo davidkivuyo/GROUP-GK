@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 /* 
 /
 / GLOBAL STYLES FOR ALL PAGES
 / These reflect on all pages linked with abel.css respectively
 /
 */
+
 * {
   scroll-behavior: smooth;
+}
+
+:root {
+  --heading-font: "DM Sans serif", serif;
+  --body-font: "DM Sans", sans-serif;
 }
 
 .logo {
@@ -22,12 +31,6 @@ header {
   padding: 0.5rem;
   border-radius: 10px 10px 0 0;
   border-bottom: 2px solid #1f1f1f;
-}
-
-header a p {
-  color: rgb(33, 33, 33);
-  font-family: Helvetica;
-  font-weight: bolder;
 }
 
 .navlist {
@@ -64,6 +67,7 @@ main {
 
 .introduction h1 {
   text-align: center;
+  font-family: var(--heading-font);
 }
 
 .introbox {

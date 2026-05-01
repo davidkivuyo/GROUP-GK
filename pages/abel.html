@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abel</title>
     <link rel="stylesheet" href="../css/abel.css" />
+
+    <!-- LINKS TO ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- header and navigation THIS IS GLOBALY APPLIED -->
@@ -28,53 +37,80 @@
     <!--This is the start of the main body of the page-->
 
     <main>
-      <section class="introduction">
+      <section class="introduction" id="introduction">
         <h1>Abel's Portfolio</h1>
         <div class="introbox">
           <img src="/images/abel_pic.webp" alt="activity photo" width="400px" />
           <div class="introtext">
-            <h2>A Short Biography</h2>
+            <h2>A Short Biography...</h2>
             <p>
               My name is Abel Kuringe Julius. I'm a first year student at the
-              University of Dar-es-Salaam currently taking a Bachelor's degree
-              in Computer Science starting 2025/26.
+              University of Dar es Salaam currently taking a Bachelor's degree
+              in Computer Science starting 2025/26. Currently, I'm building my
+              foundation in HTML and exploring my interests in Web Development.
+              Let's connect and create something impactful that drives digital
+              innovation!
             </p>
           </div>
         </div>
+        <div class="intromenu">
+          <ul>
+            <li>
+              <a href="#myskills"
+                ><i class="fa-solid fa-people-pulling"></i>My Skills</a
+              >
+            </li>
+            <li>
+              <a href="#academic"
+                ><i class="fa-solid fa-book"></i>Academic Journey</a
+              >
+            </li>
+            <li>
+              <a href="#hobbies"><i class="fa-solid fa-gamepad"></i>Hobbies</a>
+            </li>
+            <li>
+              <a href="#gallery"
+                ><i class="fa-solid fa-photo-film"></i>Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="myskills">
+      <section class="myskills" id="myskills">
         <h2>Skills</h2>
         <!--this is my skills section-->
-        <ol>
-          <li>
-            Programming and Web development
-            <ul>
-              <li>Html</li>
-              <li>Css</li>
-              <li>Javascript</li>
-            </ul>
-          </li>
-          <li>
-            Computer Maintanance
-            <ul>
-              <li>Installation and Configuration</li>
-              <li>System Troubleshooting</li>
-              <li>IT Support</li>
-            </ul>
-          </li>
-          <li>
-            Soft skills
-            <ul>
-              <li>Teamwork</li>
-              <li>Communication</li>
-            </ul>
-          </li>
-        </ol>
+        <div class="skillbox">
+          <ol>
+            <li>
+              Programming and Web development
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+              </ul>
+            </li>
+            <li>
+              Computer Maintanance
+              <ul>
+                <li>Installation and Configuration</li>
+                <li>System Troubleshooting</li>
+                <li>IT Support</li>
+              </ul>
+            </li>
+            <li>
+              Soft skills
+              <ul>
+                <li>Teamwork</li>
+                <li>Communication</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <!--table-->
-      <section class="academic">
+      <section class="academic" id="academic">
         <table class="academic-table">
           <!--This is a table with my academic history-->
           <h2>My Academic History</h2>
@@ -106,7 +142,7 @@
         </table>
       </section>
 
-      <section class="hobbies">
+      <section class="hobbies" id="hobbies">
         <h2>Hobbies</h2>
         <ol>
           <li>
@@ -137,7 +173,7 @@
 
       <!--These are various images-->
 
-      <section class="imagearea">
+      <section class="gallery" id="gallery">
         <img src="/images/abel_main.avif" alt="activity photo" width="500px" />
         <img
           src="../images/abel_gcard.webp"

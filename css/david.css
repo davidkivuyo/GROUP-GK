@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-  margin: 2rem 0;
+  margin: 2rem;
 }
 
 main {
@@ -64,19 +64,30 @@ cursor: pointer;
 color: #33383e;
 }
 
+#table-start{
+  padding-top: 1.5rem;
+}
 table {
   width: 80%;
   margin: 40px auto;
-  border-radius: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px gray;
 }
 
 th {
   background-color: #1f73f9;
   padding: 10px;
+  border-radius: 5px 5px 0 0;
 }
 
-td {
+td{
   color: #333;
+}
+
+/* apply styles to even numbered rows in the table*/
+tr:nth-child(even) {
+  color: #333;
+  background-color: #d6d7d7;
 }
 
 .card-parent {
@@ -90,9 +101,15 @@ td {
   border-radius: 10px;
   padding: 1rem;
 }
-.card img{
+
+.card-img{
+  background-color: #f1efef;
+  border-radius: 10px;
+  max-width: 4--px;
+}
+.card-img img{
 object-fit: cover;
 width: 100%;
-border-radius: 10px;
+height: 25vh;
 border: none;
 }

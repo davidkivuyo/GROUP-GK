@@ -147,6 +147,7 @@ header {
   color: var(--normal-color);
   letter-spacing: 0.2rem;
   padding: 1rem;
+  align-items: center;
 }
 
 #text1 {

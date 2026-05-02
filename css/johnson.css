@@ -1,46 +1,5 @@
-/* {
-  font-family: Arial;
-  text-decoration: none;
-}
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-}
 
-header a p {
-  color: rgb(0, 0, 0);
-  font-family: Helvetica;
-}
-
-.navlist {
-  display: flex;
-}
-
-.navlist li {
-  list-style: none;
-  font-weight: bold;
-}
-
-.navlist li a {
-  font-size: 20px;
-  text-decoration: none;
-  padding: 10px;
-  color: #151515;
-}
-
-.navlist li a:hover {
-  color: #86b4ff;
-  font-size: 22px;
-  transition: ease-in-out 0.3s;
-}
-
-.navlist p a {
-  font-weight: bolder;
-}
-*/
 
 
 main {
@@ -84,9 +43,10 @@ main {
 .skills{
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 35px;
+  column-gap: 35px;
+  row-gap: 0;
   justify-content: center;
-  max-width: 700px;
+  max-width: 100px;
   margin: 30px auto;
 }
 
@@ -104,8 +64,12 @@ main {
 
 .skillbox ul{
   list-style: none;
-  padding: 0;         /* removes left spacing */
+  padding:0;         /* removes left spacing */
   margin: 0;
+}
+
+.skillbox ul li {
+  text-align: left;
 }
 
 .skillsimage {
@@ -115,14 +79,23 @@ main {
   gap: 20px;
 }
 
+.skillsimage img{
+    border-radius:10px;
+}
+
+
 table {
   table-layout:auto;
-  width: 80%;
+  width: 70%;
   margin: 40px auto;   /* THIS centers it horizontally */
   border-collapse: collapse;
   border-radius: 10px;
-  overflow: hidden;
-     
+  overflow: hidden;     
+}
+table thead{
+  background-color:#1a1919;
+  color: white;
+  border-radius: 10px; 
 }
 
 .hob{
@@ -134,9 +107,9 @@ table {
   color: white;
   border-radius: 10px;
   margin: 30px auto;
-  }
+}
 
-  .hob ul{
+.hob ul{
   list-style: none;
   min-height: 10px;
   padding: 30px;         /* removes left spacing */

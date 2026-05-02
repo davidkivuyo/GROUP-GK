@@ -11,7 +11,7 @@
 
 * {
   scroll-behavior: smooth;
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 3rem;
   text-decoration: none;
 }
 
@@ -88,10 +88,6 @@ header {
 /
 */
 
-main {
-  align-items: center;
-}
-
 /*
 /
 / INTRODUCTION SECTION
@@ -105,6 +101,7 @@ main {
     url(/images/abel-back.jpg);
   background-size: cover;
   background-position: center;
+  display: flow-root;
 }
 
 .introduction h1 {
@@ -190,6 +187,7 @@ main {
 
 .myskills {
   min-height: 90vh;
+  display: flow-root;
 }
 
 .myskills h2 {
@@ -201,21 +199,148 @@ main {
 }
 
 .skillbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 900px;
   margin: 40px auto;
   font-size: var(--text-font);
+  position: relative;
+  max-width: 60rem;
 }
 
-.skillbox ol {
+.cardslider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  box-shadow: 1.5rem 0 3rem -2rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  /* Removing the scrollbar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+}
+
+.card {
+  scroll-margin-top: 10rem;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+
+#card1 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-card1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#card2 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-card2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#card3 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-card3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#card1:hover {
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 90%),
+    url(/images/abel-card4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#card2:hover {
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 90%),
+    url(/images/abel-card5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#card3:hover {
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 90%),
+    url(/images/abel-card6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cardtext {
+  align-items: center;
+  padding: 3rem;
+}
+
+.cardtext ul {
   list-style: none;
 }
 
-.skillbox ul {
-  list-style: none;
+#cardtext1 p {
+  font-family: var(--logo-font);
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+#cardtext1 li {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+#cardtext2 p {
+  font-family: var(--logo-font);
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+#cardtext2 li {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+#cardtext3 p {
+  font-family: var(--logo-font);
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+#cardtext3 li {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.slidernav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+.slidernav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--normal-color);
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slidernav a:hover {
+  opacity: 1;
 }
 
 /*
@@ -226,24 +351,51 @@ main {
 /
 */
 
+.academic_history {
+  min-height: 90vh;
+  background:
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-back.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flow-root;
+  scroll-margin-top: 4.5rem;
+}
+
+.academic_box {
+  margin: 40px auto;
+  font-size: var(--text-font);
+  max-width: 60rem;
+}
+
+.academic_history h2 {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: var(--h2-font);
+  letter-spacing: 0.7rem;
+  color: var(--normal-color);
+}
+
 .academic-table {
-  border-collapse: collapse;
-  box-shadow: 0 0 8px rgb(0, 0, 0, 1);
-  border-radius: 5px;
   overflow: hidden;
+  min-height: 60vh;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem var(--logo-color);
+  border-radius: 0.8rem;
 }
 
 .academic-table th,
 td {
   padding: 12px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
 }
 
+/*
 .academic-table th {
-  background-color: #1f73f9;
+  background-color: var(--main-color);
 }
+*/
 
 .academic-table td {
-  color: #333;
+  color: var(--normal-color);
 }

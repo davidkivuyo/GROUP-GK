@@ -464,24 +464,24 @@ td {
 
 #gallerycard1 {
   background:
-    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
-    url(/images/abel-hob1.jpg);
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 15%),
+    url(/images/abel-gal3.jpeg);
   background-size: cover;
   background-position: center;
 }
 
 #gallerycard2 {
   background:
-    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
-    url(/images/abel-hob2.webp);
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 15%),
+    url(/images/abel-gal2.jpeg);
   background-size: cover;
   background-position: center;
 }
 
 #gallerycard3 {
   background:
-    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
-    url(/images/abel-hob3.webp);
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 15%),
+    url(/images/abel-gal1.jpeg);
   background-size: cover;
   background-position: center;
 }

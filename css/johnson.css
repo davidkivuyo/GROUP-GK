@@ -168,6 +168,7 @@ table thead{
     url(/images/gamingpad.jpg);
   background-size: cover;
   background-position: center;
+  box-shadow: 0 8px 25px rgba(6, 157, 251, 0.4);  
 }
 
 .hob ul{

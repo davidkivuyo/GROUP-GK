@@ -224,8 +224,14 @@ header {
 .card-content .btn {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #333;
+  background-color: var(--logo-color);
   text-decoration: none;
   border-radius: 4px;
   color: #fff;
+  transition: all ease 300ms;
+}
+
+.card-content .btn:hover {
+  background-color: var(--accent-color);
+  padding: 10px 18px;
 }

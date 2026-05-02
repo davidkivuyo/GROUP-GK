@@ -254,30 +254,6 @@ header {
   background-position: center;
 }
 
-#card1:hover {
-  background:
-    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 90%),
-    url(/images/abel-card4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#card2:hover {
-  background:
-    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 90%),
-    url(/images/abel-card5.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#card3:hover {
-  background:
-    linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 90%),
-    url(/images/abel-card6.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .cardtext {
   align-items: center;
   padding: 3rem;
@@ -356,7 +332,7 @@ header {
   min-height: 90vh;
   background:
     linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
-    url(/images/abel-back.jpg);
+    url(/images/abel-academic.jpg);
   background-size: cover;
   background-position: center;
   display: flow-root;
@@ -381,8 +357,9 @@ header {
   overflow: hidden;
   min-height: 60vh;
   backdrop-filter: blur(7px);
-  box-shadow: 0 0.4rem 0.8rem var(--logo-color);
+  box-shadow: 0 0.4rem 0.8rem #fffb;
   border-radius: 0.8rem;
+  background-color: #fffb;
 }
 
 .academic-table th,
@@ -391,12 +368,120 @@ td {
   text-align: center;
 }
 
-/*
-.academic-table th {
-  background-color: var(--main-color);
+.academic-table td {
+  text-align: left;
+  color: var(--normal-color);
 }
+
+/*
+/
+/
+/ HOBBIES SECTION //////////
+/
+/
 */
 
-.academic-table td {
+.hobbies_section {
+  min-height: 90vh;
+  /*
+  background:
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-academic.jpg); */
+  background-size: cover;
+  background-position: center;
+  display: flow-root;
+  scroll-margin-top: 4.5rem;
+}
+
+.hobbies_section h2 {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: var(--h2-font);
+  letter-spacing: 0.7rem;
   color: var(--normal-color);
+}
+
+.hobbies_box {
+  margin: 40px auto;
+  font-size: var(--text-font);
+  position: relative;
+  max-width: 60rem;
+}
+
+#hobbycard1 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-hob1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#hobbycard2 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-hob2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+#hobbycard3 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-hob3.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+/
+/
+/ GALLERY SECTION //////////
+/
+/
+*/
+.gallery_section {
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flow-root;
+  scroll-margin-top: 4.5rem;
+}
+
+.gallery_section h2 {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: var(--h2-font);
+  letter-spacing: 0.7rem;
+  color: var(--normal-color);
+}
+
+.gallery_box {
+  margin: 40px auto;
+  font-size: var(--text-font);
+  position: relative;
+  max-width: 60rem;
+}
+
+#gallerycard1 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-hob1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#gallerycard2 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-hob2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+#gallerycard3 {
+  background:
+    linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/abel-hob3.webp);
+  background-size: cover;
+  background-position: center;
 }

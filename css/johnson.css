@@ -3,13 +3,13 @@ main {
 }
 
 .welcome {
-  padding: 50px;
   min-height: 90vh;
   background:
     linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
     url(/images/horizonbeach.jpg);
   background-size: cover;
   background-position: center;
+  display: flow-root;
   
 }
 
@@ -23,7 +23,8 @@ main {
 
 .welcome h2 {
   text-align: center;
-  font-family:Georgia, 'Times New Roman'
+  font-family:Georgia, 'Times New Roman';
+  letter-spacing: 0.5rem;
 }
 .welcome h4{
   text-align: center;
@@ -66,14 +67,53 @@ main {
 }
 
 .skillbox{
-  background: #1a1919;
-  color: white;
+  color: black;
   padding: 20px;
   border-radius: 10px;
   width: 375px;
   min-height: 180px;
   text-align: center;
   box-shadow: 0 0 15px rgba(205, 188, 188, 0.5);
+  
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(56,189,248,0.6);
+  transition: 0.3s;
+}
+
+
+#skillbox1{
+  background:
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/web-development.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+#skillbox2{
+  background:
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/programming.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+#skillbox3{
+  background:
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/horizonbeach.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+#skillbox4{
+  background:
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/soft-skills.jpg);
+  background-size: cover;
+  background-position: center;
   
 }
 
@@ -120,10 +160,14 @@ table thead{
   grid-template-columns: repeat(1, 1fr); /* 2 columns */
   text-align: center;
   max-width: 800px;
-  background-color: #1a1919;
-  color: white;
+  color: black;
   border-radius: 10px;
   margin: 30px auto;
+  background:
+    linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 90%),
+    url(/images/gamingpad.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hob ul{

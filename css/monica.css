@@ -114,14 +114,7 @@ section {
     url(/images/edu-back_.jpg);
 }
 * Button style links */
-a {
-  color: pink;
-  text-decoration: none;
-}
 
-a:hover {
-  color: grey;
-}
 image:hover {
   opacity: 0.9;
   transform: scale(1.05);

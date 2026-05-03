@@ -213,7 +213,7 @@ table, th, td {
 
 #box1:hover{
   transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgb(255, 0, 0);
 }
 
 #box2{
@@ -228,7 +228,7 @@ table, th, td {
 
 #box2:hover{
   transform: translateY(-10px);
-  box-shadow: 0 0 20px rgb(192, 2, 239);
+  box-shadow: 0 0 20px rgb(204, 0, 255);
 }
 
 #box3{
